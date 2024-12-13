@@ -1,0 +1,58 @@
+fragment PostParts on Post {
+  __typename
+  title
+  date
+  image
+  categories
+  tags
+  body
+}
+
+fragment AuthorsParts on Authors {
+  __typename
+  title
+  email
+  image
+  description
+  social {
+    __typename
+    name
+    icon
+    link
+  }
+}
+
+fragment PagesParts on Pages {
+  __typename
+  title
+  description
+  body
+}
+
+fragment AboutParts on About {
+  __typename
+  title
+  description
+  body
+}
+
+fragment ContactParts on Contact {
+  __typename
+  title
+  description
+  body
+}
+
+fragment HomepageParts on Homepage {
+  __typename
+  title
+  description
+  body
+}
+
+fragment SectionsParts on Sections {
+  __typename
+  title
+  enable
+  body
+}
